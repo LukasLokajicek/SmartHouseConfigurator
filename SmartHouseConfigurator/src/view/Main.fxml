@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="891.0" prefWidth="1287.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="control.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Load" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TitledPane fx:id="pnlA" layoutX="199.0" layoutY="123.0" prefHeight="200.0" prefWidth="200.0" text="A" />
+            <TitledPane fx:id="pnlB" layoutX="508.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" text="B" />
+         </children>
+      </Pane>
+   </center>
+   <left>
+      <VBox alignment="CENTER" prefHeight="859.0" prefWidth="85.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn1" mnemonicParsing="false" text="Button" />
+            <Button fx:id="btn2" mnemonicParsing="false" text="Button" />
+            <Button fx:id="btn3" mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
